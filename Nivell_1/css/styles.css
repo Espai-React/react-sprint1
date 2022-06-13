@@ -10,7 +10,7 @@ body, html {
 	margin: 10px;
 	padding: 10px;
 	box-sizing: border-box;
-} 
+}
 
 .contenidor {
     max-width: 1200px;
@@ -56,10 +56,9 @@ body, html {
 
         .seccio {
             background-color: #4e4e6a;
+            flex: 2;
             display: flex;
             flex-flow: row wrap;
-            flex: 2;
-            
         }
 
             .article {                
@@ -73,10 +72,10 @@ body, html {
             }
 
         .aside {
-            background-color: #f73f52;           
+            background-color: #f73f52;
+            flex: 1;
             display: flex;
             flex-flow: column nowrap;
-            flex: 1;            
         }
 
             .aside1, .aside2 {               
@@ -94,3 +93,11 @@ body, html {
         .peuPagina {            
             background-color: #e6af2e;
         }
+
+@media (max-width: 1024px) {
+
+    .main {
+        flex-direction: column;
+        background-color: yellow;
+    }
+}
