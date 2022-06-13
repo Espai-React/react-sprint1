@@ -56,6 +56,7 @@ body, html {
 
         .seccio {
             background-color: #4e4e6a;
+
             flex: 2;
             display: flex;
             flex-flow: row wrap;
@@ -73,6 +74,7 @@ body, html {
 
         .aside {
             background-color: #f73f52;
+
             flex: 1;
             display: flex;
             flex-flow: column nowrap;
@@ -99,5 +101,47 @@ body, html {
     .main {
         flex-direction: column;
         background-color: yellow;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .nav {
+        flex-direction: column;
+    }
+
+    .navEsq, .navCentre, .navDreta {
+        flex: 1;       
+    }
+
+    .main {
+        background-color:#f8e42f;
+    }
+
+    .seccio {
+        background-color:rgb(27, 100, 122);
+        flex-direction: column;
+    }
+
+    .article {
+        background-color: rgb(101, 154, 184);
+        flex: 1;
+    }
+
+    .seccioFooter {
+        background-color: rgb(171, 231, 171);
+        flex: 1;
+    }
+
+    .aside {
+        background-color: rgb(245, 116, 57);
+    }
+
+    .aside1, .aside2 {
+        background-color: rgb(231, 174, 100);
+    }
+
+    .peuPagina {
+        background-color: #ebbe58
     }
 }
