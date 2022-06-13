@@ -124,62 +124,117 @@ html {
                 font-size: 3rem;
             }
 
-        .main {
-            border: 1rem solid #000;
+    .main {
+        font-size: 1.6rem;
 
+        display: flex;
+        gap: 1rem;
+    }
+
+        .seccio {
+            background-color: rgba(70, 68, 68, 0.2);
+            color: dimgray;
+
+            flex: 3;
             display: flex;
+            flex-flow: row wrap;
         }
 
-            .seccio {
+            .article {
+                background-color: rgba(243, 243, 243, 0.856);
+                margin: 1rem;
                 padding: 1rem;
-                background-color: #4e4e6a;
-                border-right: .5rem solid black;
 
-                flex: 3;
-                display: flex;
-                flex-flow: row wrap;
-                gap: 1rem;
+                flex: 1 1 40%;
             }
 
-                .article {
-                    height: 1rem;
-                    background-color: #1f6cb0;
+            .article img {
+                object-fit: cover;
+                width: 100%;
+                height: 19rem;
+            }
 
-                    flex: 1 1 40%;
+            .article h3 {
+                margin-top: -2.2rem;
+                padding-left: .3rem;
+                color: #ffd46e;
+
+                font-size: 1.5rem;
+                font-weight: lighter;
+            }
+
+            .article .titol {
+                background-color: rgb(220, 120, 130);
+                height: 3.6rem;
+                margin-top: .75rem;
+                padding: 1rem 0 0 .5rem;
+                text-transform: uppercase;
+                color: rgba(255, 255, 255, 0.856);
+                font-family: 'Roboto Mono', monospace;
+                font-size: 2rem;
+                font-weight: 600;
+                letter-spacing: .2rem;
+            }
+
+            .article p {
+                column-count: 2;
+                column-gap: 2rem;
+                margin: 2rem 0 0 .4rem;
+                font-size: 1.5rem;
+            }
+
+            .article a {
+                display: block;
+                padding: 1rem 0 0 .4rem;
+                opacity: 0.7;
+                text-decoration: none;
+                color: dimgray;
+            }
+
+            .seccioFooter {
+                padding: 1.2rem 1.5rem .6rem 1.5rem;
+                text-align: justify;
+                text-align-last: center;
+                color: black;
+
+                flex: 1 1 100%;
+            }
+
+                .seccioFooter h4 {
+                    font-weight: lighter;
                 }
 
-                .seccioFooter {
-                    height: 1rem;
-                    background-color: #70a3c4;
+        .aside {
+            padding: 2rem .75rem 0;
+            background-color: rgba(70, 68, 68, 0.2);
+            text-align: center;
 
-                    flex: 1 1 100%;
-                }
-
-            .aside {
+            flex: 1;
+            display: flex;
+            flex-flow: column nowrap;
+            gap: .8rem;
+        }
+            .aside1,
+            .aside2 {
                 padding: 1rem;
-                background-color: tomato;
-                border-left: 5px solid black;
-
-                flex: 1;
-                display: flex;
-                flex-flow: column nowrap;
-                gap: .5rem;
-            }
-    
-                .aside1,
-                .aside2 {
-                    height: 1rem;
-                    background-color: #ffea85;
-                }
-
-            .footer {
-                border: 1rem solid #000;
             }
 
-                .peuPagina {
-                    height: 1rem;
-                    background-color: #e6af2e;
-                }
+            .aside1 {
+                font-size: 1.8rem;
+            }
+
+        .footer {
+            background-color: rgba(70, 68, 68, 0.2);
+            font-size: 1.6rem;
+        }
+
+            .peuPagina {
+                background-color: rgba(243, 243, 243, 0.856);
+                color: dimgray;
+                text-align: center;
+                margin: 0 1rem;
+                padding: .75rem 0;
+            }
 
 @media (max-width: 1024px) {
 
@@ -243,18 +298,37 @@ html {
     }
 
     .main {
-        border: 1rem solid yellow;
+        font-size: 1.25rem;
         flex-flow: column nowrap;
     }
 
-    .seccio {
-        border-right: none;
-        border-bottom: .5rem solid yellow;
+    .article h3{
+        margin-top: -1.8rem;
+        font-size: 1.2rem
+    }
+
+    .article .titol {
+        height: 2.8rem;
+        font-size: 1.5rem;
+    }
+
+    .article p {
+        margin-top: 1rem;
+        font-size: 1.3rem;
     }
 
     .aside {
-        border-left: none;
-        border-top: .5rem solid yellow;
+        padding: 1rem .5rem 0;
+        gap: .3rem;
+    }
+
+    .aside1,
+    .aside2 {
+        padding: .5rem;
+    }
+
+    .aside1 {
+        font-size: 1.5rem;
     }
 }
 
@@ -305,30 +379,39 @@ html {
     }
 
     .main {
-        background-color:#f8e42f
+        font-size: 1.3rem;
     }
 
-
     .seccio {
-        background-color:rgb(27, 100, 122);;
         flex-flow: column nowrap;
     }
 
     .article {
-        background-color: rgb(101, 154, 184);
-        flex: 1 1 auto;
+        flex: 1;
+    }
+
+    .article h3{
+        margin-top: -1.5rem;
+        font-size: 1rem
+    }
+
+    .article .titol {
+        height: 2.5rem;
+        padding-top: .7rem;
+        font-size: 1.5rem;
+    }
+    
+    .article p {
+        column-count: 1;
+        margin-top: 1rem;
+        font-size: 1.3rem;
     }
 
     .seccioFooter {
-        background-color: rgb(171, 231, 171);
-        flex: 1 1 auto;
+        flex: 1;
     }
 
-    .aside {
-        background-color: rgb(245, 116, 57);
-    }
-
-    .aside1, .aside2 {
-        background-color: rgb(231, 174, 100);
+    .peuPagina {
+        font-size: 1.3rem;
     }
 }
