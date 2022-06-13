@@ -1,0 +1,334 @@
+
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contenidor {
+    max-width: 1200px;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+    .header {
+        background-image: url("../img/header.jpg");
+        background-size: 180rem;
+        background-position: center 50%;
+
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+    }
+
+        .nav {
+            margin-top: 2.5rem;
+
+            display: flex;
+            align-items: center;
+        }
+
+            .navEsq {
+                padding: 1rem 0 0 2rem;
+                flex: 1;
+            }
+
+            .navEsq img {
+                width: 8rem;
+            }
+
+            .navCentre {
+                padding: 1.5rem 8rem 0 0;
+                list-style: none;
+
+                flex: 4;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .navCentre a {
+                padding: .25rem .5rem;
+                text-decoration: none;
+                font-size: 1.6rem;
+                color: dimgray;
+
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: .5rem;
+            }
+
+            .icon {
+                font-size: 1.6rem;
+            }
+
+            .icon2 {
+                font-size: 1.9rem;
+            }
+
+            .navCentre a:hover {
+                background-color: tomato;
+                border-radius: .3rem;
+                color:white;
+                opacity: 0.8;
+            }
+
+            .navDreta {
+                padding-top: 2rem;
+                list-style: none;
+
+                flex: 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 1.5rem;
+            }
+
+            .navDreta a {
+                color: dimgray;
+                padding: .4rem .7rem;
+            }
+
+            .icon3 {
+                font-size: 1.8rem;
+            }
+
+            .navDreta a:hover {
+                color: tomato;
+                opacity: 0.8;
+            }
+
+        .slide {
+            height: 13.5rem;
+            margin: 13.5rem 7rem 0;
+            padding-top: 2.5rem;
+            text-align: center;
+            background-color:rgba(70, 68, 68, 0.1);
+        }
+
+            .titol h1 {
+                color: #ff7d4a;
+                opacity: 0.7;
+                text-align: center;
+                font-family: 'IM Fell Double Pica', serif;
+                font-weight: lighter;
+                font-size: 3rem;
+            }
+
+        .main {
+            border: 1rem solid #000;
+
+            display: flex;
+        }
+
+            .seccio {
+                padding: 1rem;
+                background-color: #4e4e6a;
+                border-right: .5rem solid black;
+
+                flex: 3;
+                display: flex;
+                flex-flow: row wrap;
+                gap: 1rem;
+            }
+
+                .article {
+                    height: 1rem;
+                    background-color: #1f6cb0;
+
+                    flex: 1 1 40%;
+                }
+
+                .seccioFooter {
+                    height: 1rem;
+                    background-color: #70a3c4;
+
+                    flex: 1 1 100%;
+                }
+
+            .aside {
+                padding: 1rem;
+                background-color: tomato;
+                border-left: 5px solid black;
+
+                flex: 1;
+                display: flex;
+                flex-flow: column nowrap;
+                gap: .5rem;
+            }
+    
+                .aside1,
+                .aside2 {
+                    height: 1rem;
+                    background-color: #ffea85;
+                }
+
+            .footer {
+                border: 1rem solid #000;
+            }
+
+                .peuPagina {
+                    height: 1rem;
+                    background-color: #e6af2e;
+                }
+
+@media (max-width: 1024px) {
+
+    .contenidor {
+        margin: 1rem 1rem;
+    }
+
+    .header {
+        background-size: 150rem;
+        background-position: center 50%;
+    }
+
+    .navEsq {
+        padding: 1rem 0 0 1.2rem;
+    }
+
+    .navEsq img {
+        width: 60px;
+    }
+
+    .icon {
+        font-size: 1.1rem;
+    }
+
+    .icon2 {
+        font-size: 1.3rem;
+    }
+
+    .navCentre {
+        padding: 1.5rem 4rem 0 0;
+    }
+
+    .navCentre a {
+        padding: .3rem .4rem;
+        font-size: 1.3rem;
+        gap: .3rem;
+    }
+
+    .navDreta {
+        padding-top: 1.5rem;
+        gap: 1rem;
+    }
+
+    .icon3 {
+        font-size: 1.1rem;
+    }
+
+    .navDreta a {
+        padding: 0 .3rem 0 .3rem;
+    }
+
+    .slide {
+        height: 10.5rem;
+        margin: 11.5rem 5rem 0;
+        padding: 2.5rem 0 0;
+    }
+
+    .titol h1 {
+        padding-top: .5rem;
+        font-size: 2.5rem;
+    }
+
+    .main {
+        border: 1rem solid yellow;
+        flex-flow: column nowrap;
+    }
+
+    .seccio {
+        border-right: none;
+        border-bottom: .5rem solid yellow;
+    }
+
+    .aside {
+        border-left: none;
+        border-top: .5rem solid yellow;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .header {
+        background-size: 90rem;
+        background-position: center 40%;
+    }
+
+    .nav {
+        margin-top: 2rem;
+        padding-top: 1rem;
+        flex-flow: column nowrap;
+    }
+
+    .navEsq {
+        padding: 0;
+    }
+
+    .navEsq img {
+        width: 6rem;
+    }
+
+    .navCentre {
+        padding: 1.2rem 0 0;
+        gap: 2rem;
+    }
+
+    .off {
+        display: none;
+    }
+
+    .navDreta{
+        padding-top: 1.6rem;
+        gap: .5rem;
+    }
+
+    .slide {
+        height: 6.25rem;
+        margin: 4.5rem 3rem 0;
+        padding: 0;
+    }
+
+    .titol h1 {
+        padding-top: 1.8rem;
+        font-size: 1.75rem;
+    }
+
+    .main {
+        background-color:#f8e42f
+    }
+
+
+    .seccio {
+        background-color:rgb(27, 100, 122);;
+        flex-flow: column nowrap;
+    }
+
+    .article {
+        background-color: rgb(101, 154, 184);
+        flex: 1 1 auto;
+    }
+
+    .seccioFooter {
+        background-color: rgb(171, 231, 171);
+        flex: 1 1 auto;
+    }
+
+    .aside {
+        background-color: rgb(245, 116, 57);
+    }
+
+    .aside1, .aside2 {
+        background-color: rgb(231, 174, 100);
+    }
+}
