@@ -1,0 +1,96 @@
+
+
+
+body, html {
+    padding: 0;
+    margin: 0;
+}
+
+* {
+	margin: 10px;
+	padding: 10px;
+	box-sizing: border-box;
+} 
+
+.contenidor {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+    .header {
+        background-color: #000;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+    }
+
+        .nav {
+            background-color:#2d4059;                   
+            display: flex;
+        }
+
+            .navEsq, .navDreta {
+                background-color: #ea5455;
+                flex: 1;
+            }
+
+            .navCentre {
+                background-color: #ea5455;
+                flex: 4;
+            }
+
+        .capPagina {
+            background-color: #f07b3f;
+        }
+
+            .titol {
+                background-color: #ffd460;
+            }
+
+    .main {
+        background-color: #000;
+        display: flex;
+    }
+
+        .seccio {
+            background-color: #4e4e6a;
+            display: flex;
+            flex-flow: row wrap;
+            flex: 2;
+            
+        }
+
+            .article {                
+                background-color: #1f6cb0;  
+                flex: 1 1 40%;
+            }
+
+            .seccioFooter {                
+                background-color:#70a3c4;
+                flex: 1 1 100%;    
+            }
+
+        .aside {
+            background-color: #f73f52;           
+            display: flex;
+            flex-flow: column nowrap;
+            flex: 1;            
+        }
+
+            .aside1, .aside2 {               
+                background-color: #ffea85;   
+            }
+
+            .aside2 {
+                margin-top: 0;
+            }
+
+    .footer {
+        background-color: #000;
+    }
+
+        .peuPagina {            
+            background-color: #e6af2e;
+        }
