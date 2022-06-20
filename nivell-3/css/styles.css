@@ -44,6 +44,8 @@ html {
             .navEsq {
                 padding: 1rem 0 0 2rem;
                 flex: 1;
+
+                animation: opac 3s ease-in;
             }
 
             .navEsq img {
@@ -57,6 +59,8 @@ html {
                 flex: 4;
                 display: flex;
                 justify-content: space-between;
+
+                animation: esquerra 2s ease-in;
             }
 
             .navCentre a {
@@ -95,6 +99,8 @@ html {
                 justify-content: center;
                 align-items: center;
                 gap: 1.5rem;
+
+                animation: dreta 2s ease-in;
             }
 
             .navDreta a {
@@ -119,6 +125,8 @@ html {
             padding-top: 2.5rem;
             text-align: center;
             background-color:rgba(70, 68, 68, 0.1);
+
+            animation: amunt 2s ease-in;
         }
 
             .titol h1 {
@@ -205,6 +213,8 @@ html {
                 column-gap: 2rem;
                 margin: 2rem 0 0 .4rem;
                 font-size: 1.5rem;
+
+                animation: avall 2s ease-in;
             }
 
             .article a {
@@ -239,6 +249,8 @@ html {
             grid-template-rows: repeat(2, auto);
             grid: "aside1" min-content "aside2" min-content;
             gap: .8rem;
+
+            animation: avall 2s ease-in;
         }
 
             .aside1 {
@@ -268,6 +280,70 @@ html {
                 margin: 0 1rem;
                 padding: .75rem 0;
             }
+
+
+@keyframes esquerra {
+
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes dreta {
+
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes amunt {
+
+    0% {
+        opacity: 0;
+        transform: translateY(-200px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes avall {
+
+    0% {
+        opacity: 0;
+        transform: translateY(200px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes opac {
+
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
 
 @media (max-width: 1024px) {
 
