@@ -1,147 +1,149 @@
-
-
-
-body, html {
-    padding: 0;
-    margin: 0;
+body,
+html {
+  padding: 0;
+  margin: 0;
 }
 
 * {
-	margin: 10px;
-	padding: 10px;
-	box-sizing: border-box;
+  margin: 10px;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
 .contenidor {
-    max-width: 1200px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
 }
 
-    .header {
-        background-color: #000;
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: space-between;
-    }
+.header {
+  background-color: #000;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+}
 
-        .nav {
-            background-color:#2d4059;                   
-            display: flex;
-        }
+.nav {
+  background-color: #2d4059;
+  display: flex;
+}
 
-            .navEsq, .navDreta {
-                background-color: #ea5455;
-                flex: 1;
-            }
+.navEsq,
+.navDreta {
+  background-color: #ea5455;
+  flex: 1;
+}
 
-            .navCentre {
-                background-color: #ea5455;
-                flex: 4;
-            }
+.navCentre {
+  background-color: #ea5455;
+  flex: 4;
+}
 
-        .capPagina {
-            background-color: #f07b3f;
-        }
+.capPagina {
+  background-color: #f07b3f;
+}
 
-            .titol {
-                background-color: #ffd460;
-            }
+.titol {
+  background-color: #ffd460;
+}
 
-    .main {
-        background-color: #000;
-        display: flex;
-    }
+.main {
+  background-color: #000;
+  display: flex;
+}
 
-        .seccio {
-            background-color: #4e4e6a;
+.seccio {
+  background-color: #4e4e6a;
+  flex: 2;
+  display: flex;
+  flex-flow: row wrap;
+}
 
-            flex: 2;
-            display: flex;
-            flex-flow: row wrap;
-        }
+.article {
+  background-color: #1f6cb0;
+  flex: 1 1 40%;
+}
 
-            .article {                
-                background-color: #1f6cb0;  
-                flex: 1 1 40%;
-            }
+.seccioFooter {
+  background-color: #70a3c4;
+  flex: 1 1 100%;
+}
 
-            .seccioFooter {                
-                background-color:#70a3c4;
-                flex: 1 1 100%;    
-            }
+.aside {
+  background-color: #f73f52;
 
-        .aside {
-            background-color: #f73f52;
+  flex: 1;
+  display: flex;
+  flex-flow: column nowrap;
+}
 
-            flex: 1;
-            display: flex;
-            flex-flow: column nowrap;
-        }
+.aside1,
+.aside2 {
+  background-color: #ffea85;
+}
 
-            .aside1, .aside2 {               
-                background-color: #ffea85;   
-            }
+.aside2 {
+  margin-top: 0;
+}
 
-            .aside2 {
-                margin-top: 0;
-            }
+.footer {
+  background-color: #000;
+}
 
-    .footer {
-        background-color: #000;
-    }
-
-        .peuPagina {            
-            background-color: #e6af2e;
-        }
+.peuPagina {
+  background-color: #e6af2e;
+}
 
 @media (max-width: 1024px) {
 
-    .main {
-        flex-direction: column;
-        background-color: yellow;
-    }
+  .main {
+    flex-direction: column;
+    background-color: yellow;
+  }
 }
 
 @media (max-width: 480px) {
 
-    .nav {
-        flex-direction: column;
-    }
+  .nav {
+    flex-direction: column;
+  }
 
-    .navEsq, .navCentre, .navDreta {
-        flex: 1;       
-    }
+  .navEsq,
+  .navCentre,
+  .navDreta {
+    flex: 1;
+  }
 
-    .main {
-        background-color:#f8e42f;
-    }
+  .main {
+    background-color: #f8e42f;
+  }
 
-    .seccio {
-        background-color:rgb(27, 100, 122);
-        flex-direction: column;
-    }
+  .seccio {
+    background-color: rgb(27, 100, 122);
+    flex-direction: column;
+  }
 
-    .article {
-        background-color: rgb(101, 154, 184);
-        flex: 1;
-    }
+  .article {
+    background-color: rgb(101, 154, 184);
+    flex: 1;
+  }
 
-    .seccioFooter {
-        background-color: rgb(171, 231, 171);
-        flex: 1;
-    }
+  .seccioFooter {
+    background-color: rgb(171, 231, 171);
+    flex: 1;
+  }
 
-    .aside {
-        background-color: rgb(245, 116, 57);
-    }
+  .aside {
+    background-color: rgb(245, 116, 57);
+  }
 
-    .aside1, .aside2 {
-        background-color: rgb(231, 174, 100);
-    }
+  .aside1,
+  .aside2 {
+    background-color: rgb(231, 174, 100);
+  }
 
-    .peuPagina {
-        background-color: #ebbe58
-    }
+  .peuPagina {
+    background-color: #ebbe58
+  }
 }
