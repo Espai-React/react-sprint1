@@ -99,7 +99,7 @@ html {
 
   .main {
     flex-direction: column;
-    background-color: yellow;
+    background-color: #f8e42f;
   }
 }
 
@@ -115,32 +115,28 @@ html {
     flex: 1;
   }
 
-  .main {
-    background-color: #f8e42f;
-  }
-
   .seccio {
-    background-color: rgb(27, 100, 122);
+    background-color: #1b647a;
     flex-direction: column;
   }
 
   .article {
-    background-color: rgb(101, 154, 184);
+    background-color: #659ab8;
     flex: 1;
   }
 
   .seccioFooter {
-    background-color: rgb(171, 231, 171);
+    background-color: #abe7ab;
     flex: 1;
   }
 
   .aside {
-    background-color: rgb(245, 116, 57);
+    background-color: #f57439;
   }
 
   .aside1,
   .aside2 {
-    background-color: rgb(231, 174, 100);
+    background-color: #e7ae64;
   }
 
   .peuPagina {

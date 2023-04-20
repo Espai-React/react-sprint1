@@ -54,7 +54,7 @@ html {
   padding: .25rem .5rem;
   text-decoration: none;
   font-size: 1.6rem;
-  color: dimgray;
+  color: #696969;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -70,7 +70,7 @@ html {
 }
 
 .navCentre a:hover {
-  background-color: tomato;
+  background-color: #ff6347;
   border-radius: .3rem;
   color: white;
   opacity: 0.8;
@@ -87,7 +87,7 @@ html {
 }
 
 .navDreta a {
-  color: dimgray;
+  color: #696969;
   padding: .4rem .7rem;
 }
 
@@ -96,7 +96,7 @@ html {
 }
 
 .navDreta a:hover {
-  color: tomato;
+  color: #ff6347;
   opacity: 0.8;
 }
 
@@ -105,7 +105,7 @@ html {
   margin: 13.5rem 7rem 0;
   padding-top: 2.5rem;
   text-align: center;
-  background-color: rgba(70, 68, 68, 0.1);
+  background-color: #4644441a;
 }
 
 .titol h1 {
@@ -125,7 +125,7 @@ html {
 
 .seccio {
   background-color: rgba(70, 68, 68, 0.2);
-  color: dimgray;
+  color: #696969;
   flex: 3;
   display: flex;
   flex-flow: row wrap;
@@ -158,7 +158,7 @@ html {
   margin-top: .75rem;
   padding: 1rem 0 0 .5rem;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.856);
+  color: #ffffffda;
   font-family: 'Roboto Mono', monospace;
   font-size: 2rem;
   font-weight: 600;
@@ -177,14 +177,14 @@ html {
   padding: 1rem 0 0 .4rem;
   opacity: 0.7;
   text-decoration: none;
-  color: dimgray;
+  color: #696969;
 }
 
 .seccioFooter {
   padding: 1.2rem 1.5rem .6rem 1.5rem;
   text-align: justify;
   text-align-last: center;
-  color: black;
+  color: #000000;
   flex: 1 1 100%;
 }
 
@@ -194,7 +194,7 @@ html {
 
 .aside {
   padding: 2rem .75rem 0;
-  background-color: rgba(70, 68, 68, 0.2);
+  background-color: #46444433;
   text-align: center;
   flex: 1;
   display: flex;
@@ -212,12 +212,12 @@ html {
 }
 
 .footer {
-  background-color: rgba(70, 68, 68, 0.2);
+  background-color: #46444433;
   font-size: 1.6rem;
 }
 
 .peuPagina {
-  background-color: rgba(243, 243, 243, 0.856);
+  background-color: #f3f3f3da;
   color: dimgray;
   text-align: center;
   margin: 0 1rem;
